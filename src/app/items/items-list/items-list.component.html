@@ -10,6 +10,10 @@
     </div>
   </div>
   <div class="mdl-card__menu">
+    <button (click)="addToCart.emit(item); $event.stopPropagation();"
+            class="">
+      Add To Cart
+    </button>
     <button (click)="featured.emit(item); $event.stopPropagation();" [ngClass]="{'mdl-button--accent': item.featured}"
             class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect featured">
       <i class="material-icons">grade</i>

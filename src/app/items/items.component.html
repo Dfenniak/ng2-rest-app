@@ -6,6 +6,7 @@
     <app-items-list [items]="items"
                     (selected)="selectItem($event)"
                     (deleted)="deleteItem($event)"
+                    (addToCart)="addToCart($event)"
                     (featured)="setItemAsFeatured($event)">
     </app-items-list>
   </div>
@@ -15,5 +16,10 @@
                      [item]="selectedItem">
       Select an Item
     </app-item-detail>
+  </div>
+
+  <h4>Current Shopping Cart</h4>
+  <div *ngFor="let item of currentCart" class="item-card mdl-card mdl-shadow--2dp">
+    {{item.name}}
   </div>
 </div>

@@ -11,4 +11,5 @@ export class ItemsListComponent {
   @Output() selected = new EventEmitter();
   @Output() deleted = new EventEmitter();
   @Output() featured = new EventEmitter();
+  @Output() addToCart = new EventEmitter();
 }

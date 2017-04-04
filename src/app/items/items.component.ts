@@ -11,6 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class ItemsComponent implements OnInit {
   items: Array<Item>;
   selectedItem: Item;
+  currentCart: Array<Item> = [];
 
   constructor(
     private itemsService: ItemsService,
@@ -49,6 +50,10 @@ export class ItemsComponent implements OnInit {
 
   selectItem(item: Item) {
     this.selectedItem = item;
+  }
+
+  addToCart(item: Item) {
+    this.currentCart.push(item);
   }
 
   saveItem(item: Item) {
