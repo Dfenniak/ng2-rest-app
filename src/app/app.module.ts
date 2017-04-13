@@ -8,6 +8,7 @@ import { ItemsService } from './shared';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
+import { WidgetsComponent } from './widgets/widgets.component';
 import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { FeaturedItemComponent } from './items/featured-item/featured-item.component';
@@ -16,6 +17,7 @@ import { FeaturedItemComponent } from './items/featured-item/featured-item.compo
   declarations: [
     AppComponent,
     ItemsComponent,
+    WidgetsComponent,
     ItemsListComponent,
     ItemDetailComponent,
     FeaturedItemComponent

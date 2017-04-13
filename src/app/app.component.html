@@ -5,10 +5,12 @@
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" [routerLink]="links.items">Items</a>
+        <a class="mdl-navigation__link" [routerLink]="links.widgets">Widgeys</a>
       </nav>
     </div>
   </header>
   <main class="mdl-layout__content page-content">
     <router-outlet></router-outlet>
   </main>
+  <app-widgets></app-widgets>
 </div>
