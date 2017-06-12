@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WidgetsService } from '../shared';
 
 @Component({
   selector: 'app-widgets',
@@ -7,14 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class WidgetsComponent implements OnInit {
+  constructor(
+    private widgetsService: WidgetsService
+  ) {}
   ngOnInit() {
-    this.widgets = [
-      {id: 1, name: "widget 1"},
-      {id: 2, name: "widget 2"},
-      {id: 3, name: "widget 3"},
-      {id: 4, name: "widget 4"},
-      {id: 5, name: "widget 5"}
-    ];
+    this.widgets = this.widgetsService.widgets
   }
   uclikmuhwidgey(widge: Object) {
     this.selectedWidget = widge

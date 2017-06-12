@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { Ng2RestAppRoutingModule } from './app-routing.module';
 
 import { ItemsService } from './shared';
+import { WidgetsService } from './shared';
 
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
@@ -28,7 +29,7 @@ import { FeaturedItemComponent } from './items/featured-item/featured-item.compo
     HttpModule,
     Ng2RestAppRoutingModule
   ],
-  providers: [ItemsService],
+  providers: [ItemsService, WidgetsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
